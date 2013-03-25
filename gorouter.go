@@ -21,7 +21,7 @@ func director(req *http.Request) {
     req.URL.Scheme = "http"
     req.URL.Host = backend
 
-    if !strings.HasPrefix(path, "/chatroom/") {
+    if !strings.HasPrefix(path, "/chatsocket/") {
         return
     }
 
